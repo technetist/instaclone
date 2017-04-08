@@ -12,6 +12,13 @@
 		7A4D45361E905B4B0094B863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4D45341E905B4B0094B863 /* Main.storyboard */; };
 		7A4D45381E905B4B0094B863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A4D45371E905B4B0094B863 /* Assets.xcassets */; };
 		7A4D453B1E905B4B0094B863 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4D45391E905B4B0094B863 /* LaunchScreen.storyboard */; };
+		7A4D45431E9067090094B863 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4D45421E9067090094B863 /* Bolts.framework */; };
+		7A4D45481E906BB60094B863 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4D45471E906BB60094B863 /* Parse.framework */; };
+		7A4D454A1E906C210094B863 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4D45491E906C210094B863 /* AudioToolbox.framework */; };
+		7A4D454C1E906C370094B863 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4D454B1E906C370094B863 /* libsqlite3.tbd */; };
+		7A4D454E1E906C590094B863 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4D454D1E906C590094B863 /* libstdc++.6.tbd */; };
+		7A4D45501E906C700094B863 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4D454F1E906C700094B863 /* SystemConfiguration.framework */; };
+		7A4D45701E9299150094B863 /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4D456F1E9299150094B863 /* UserTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,14 @@
 		7A4D45371E905B4B0094B863 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A4D453A1E905B4B0094B863 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A4D453C1E905B4B0094B863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A4D45421E9067090094B863 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		7A4D45441E90671E0094B863 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		7A4D45471E906BB60094B863 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		7A4D45491E906C210094B863 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7A4D454B1E906C370094B863 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		7A4D454D1E906C590094B863 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		7A4D454F1E906C700094B863 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7A4D456F1E9299150094B863 /* UserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +44,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A4D454E1E906C590094B863 /* libstdc++.6.tbd in Frameworks */,
+				7A4D45501E906C700094B863 /* SystemConfiguration.framework in Frameworks */,
+				7A4D454A1E906C210094B863 /* AudioToolbox.framework in Frameworks */,
+				7A4D454C1E906C370094B863 /* libsqlite3.tbd in Frameworks */,
+				7A4D45481E906BB60094B863 /* Parse.framework in Frameworks */,
+				7A4D45431E9067090094B863 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +61,7 @@
 			children = (
 				7A4D452F1E905B4B0094B863 /* InstaClone */,
 				7A4D452E1E905B4B0094B863 /* Products */,
+				7A4D45461E9067310094B863 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +79,26 @@
 				7A4D45301E905B4B0094B863 /* AppDelegate.swift */,
 				7A4D45321E905B4B0094B863 /* ViewController.swift */,
 				7A4D45341E905B4B0094B863 /* Main.storyboard */,
+				7A4D456F1E9299150094B863 /* UserTableViewController.swift */,
 				7A4D45371E905B4B0094B863 /* Assets.xcassets */,
 				7A4D45391E905B4B0094B863 /* LaunchScreen.storyboard */,
 				7A4D453C1E905B4B0094B863 /* Info.plist */,
 			);
 			path = InstaClone;
+			sourceTree = "<group>";
+		};
+		7A4D45461E9067310094B863 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A4D454F1E906C700094B863 /* SystemConfiguration.framework */,
+				7A4D454D1E906C590094B863 /* libstdc++.6.tbd */,
+				7A4D454B1E906C370094B863 /* libsqlite3.tbd */,
+				7A4D45491E906C210094B863 /* AudioToolbox.framework */,
+				7A4D45471E906BB60094B863 /* Parse.framework */,
+				7A4D45441E90671E0094B863 /* Bolts.framework */,
+				7A4D45421E9067090094B863 /* Bolts.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A4D45331E905B4B0094B863 /* ViewController.swift in Sources */,
+				7A4D45701E9299150094B863 /* UserTableViewController.swift in Sources */,
 				7A4D45311E905B4B0094B863 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +300,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K9KEJDHY56;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = InstaClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Maranville-Designs.InstaClone";
@@ -275,6 +317,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K9KEJDHY56;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = InstaClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Maranville-Designs.InstaClone";
@@ -302,6 +348,7 @@
 				7A4D45411E905B4B0094B863 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
