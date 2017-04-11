@@ -19,6 +19,9 @@
 		7A4D454E1E906C590094B863 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4D454D1E906C590094B863 /* libstdc++.6.tbd */; };
 		7A4D45501E906C700094B863 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4D454F1E906C700094B863 /* SystemConfiguration.framework */; };
 		7A4D45701E9299150094B863 /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4D456F1E9299150094B863 /* UserTableViewController.swift */; };
+		7A701DF51E9D522900BC0680 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A701DF41E9D522900BC0680 /* PostViewController.swift */; };
+		7A701DF71E9D534A00BC0680 /* HeidlebergCastle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A701DF61E9D534A00BC0680 /* HeidlebergCastle.png */; };
+		7A701DF91E9D53EF00BC0680 /* Self-Portrait_by_Huijgh_Pietersz._Voskuijl_Mauritshuis_955.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A701DF81E9D53EF00BC0680 /* Self-Portrait_by_Huijgh_Pietersz._Voskuijl_Mauritshuis_955.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		7A4D454D1E906C590094B863 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
 		7A4D454F1E906C700094B863 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7A4D456F1E9299150094B863 /* UserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
+		7A701DF41E9D522900BC0680 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		7A701DF61E9D534A00BC0680 /* HeidlebergCastle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeidlebergCastle.png; sourceTree = "<group>"; };
+		7A701DF81E9D53EF00BC0680 /* Self-Portrait_by_Huijgh_Pietersz._Voskuijl_Mauritshuis_955.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Self-Portrait_by_Huijgh_Pietersz._Voskuijl_Mauritshuis_955.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +86,11 @@
 				7A4D45321E905B4B0094B863 /* ViewController.swift */,
 				7A4D45341E905B4B0094B863 /* Main.storyboard */,
 				7A4D456F1E9299150094B863 /* UserTableViewController.swift */,
+				7A701DF41E9D522900BC0680 /* PostViewController.swift */,
 				7A4D45371E905B4B0094B863 /* Assets.xcassets */,
 				7A4D45391E905B4B0094B863 /* LaunchScreen.storyboard */,
+				7A701DF61E9D534A00BC0680 /* HeidlebergCastle.png */,
+				7A701DF81E9D53EF00BC0680 /* Self-Portrait_by_Huijgh_Pietersz._Voskuijl_Mauritshuis_955.jpg */,
 				7A4D453C1E905B4B0094B863 /* Info.plist */,
 			);
 			path = InstaClone;
@@ -163,6 +172,8 @@
 			files = (
 				7A4D453B1E905B4B0094B863 /* LaunchScreen.storyboard in Resources */,
 				7A4D45381E905B4B0094B863 /* Assets.xcassets in Resources */,
+				7A701DF91E9D53EF00BC0680 /* Self-Portrait_by_Huijgh_Pietersz._Voskuijl_Mauritshuis_955.jpg in Resources */,
+				7A701DF71E9D534A00BC0680 /* HeidlebergCastle.png in Resources */,
 				7A4D45361E905B4B0094B863 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A701DF51E9D522900BC0680 /* PostViewController.swift in Sources */,
 				7A4D45331E905B4B0094B863 /* ViewController.swift in Sources */,
 				7A4D45701E9299150094B863 /* UserTableViewController.swift in Sources */,
 				7A4D45311E905B4B0094B863 /* AppDelegate.swift in Sources */,
