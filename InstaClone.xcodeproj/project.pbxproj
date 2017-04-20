@@ -22,6 +22,8 @@
 		7A701DF51E9D522900BC0680 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A701DF41E9D522900BC0680 /* PostViewController.swift */; };
 		7A701DF71E9D534A00BC0680 /* HeidlebergCastle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A701DF61E9D534A00BC0680 /* HeidlebergCastle.png */; };
 		7A701DF91E9D53EF00BC0680 /* Self-Portrait_by_Huijgh_Pietersz._Voskuijl_Mauritshuis_955.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A701DF81E9D53EF00BC0680 /* Self-Portrait_by_Huijgh_Pietersz._Voskuijl_Mauritshuis_955.jpg */; };
+		7A701DFB1E9DA2DA00BC0680 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A701DFA1E9DA2DA00BC0680 /* FeedTableViewController.swift */; };
+		7A701DFD1E9E787000BC0680 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A701DFC1E9E787000BC0680 /* FeedTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		7A701DF41E9D522900BC0680 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		7A701DF61E9D534A00BC0680 /* HeidlebergCastle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeidlebergCastle.png; sourceTree = "<group>"; };
 		7A701DF81E9D53EF00BC0680 /* Self-Portrait_by_Huijgh_Pietersz._Voskuijl_Mauritshuis_955.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Self-Portrait_by_Huijgh_Pietersz._Voskuijl_Mauritshuis_955.jpg"; sourceTree = "<group>"; };
+		7A701DFA1E9DA2DA00BC0680 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		7A701DFC1E9E787000BC0680 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				7A4D45301E905B4B0094B863 /* AppDelegate.swift */,
 				7A4D45321E905B4B0094B863 /* ViewController.swift */,
 				7A4D45341E905B4B0094B863 /* Main.storyboard */,
+				7A701DFC1E9E787000BC0680 /* FeedTableViewCell.swift */,
+				7A701DFA1E9DA2DA00BC0680 /* FeedTableViewController.swift */,
 				7A4D456F1E9299150094B863 /* UserTableViewController.swift */,
 				7A701DF41E9D522900BC0680 /* PostViewController.swift */,
 				7A4D45371E905B4B0094B863 /* Assets.xcassets */,
@@ -186,7 +192,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A701DF51E9D522900BC0680 /* PostViewController.swift in Sources */,
+				7A701DFD1E9E787000BC0680 /* FeedTableViewCell.swift in Sources */,
 				7A4D45331E905B4B0094B863 /* ViewController.swift in Sources */,
+				7A701DFB1E9DA2DA00BC0680 /* FeedTableViewController.swift in Sources */,
 				7A4D45701E9299150094B863 /* UserTableViewController.swift in Sources */,
 				7A4D45311E905B4B0094B863 /* AppDelegate.swift in Sources */,
 			);

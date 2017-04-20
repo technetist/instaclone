@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -110,6 +111,59 @@
             </objects>
             <point key="canvasLocation" x="-142" y="136"/>
         </scene>
+        <!--Photo Feed-->
+        <scene sceneID="qIp-6t-Ur6">
+            <objects>
+                <tableViewController title="Photo Feed" id="UO4-qe-76P" customClass="FeedTableViewController" customModule="InstaClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="375" sectionHeaderHeight="28" sectionFooterHeight="28" id="3S4-ZK-KFW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="375" id="LyC-TQ-4F2" customClass="FeedTableViewCell" customModule="InstaClone" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="375"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LyC-TQ-4F2" id="3Py-4f-6Qy">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FcK-JZ-bTk">
+                                            <rect key="frame" x="8" y="0.0" width="359" height="288"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmb-Uv-rdF">
+                                            <rect key="frame" x="8" y="296" width="359" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atC-hY-WDv">
+                                            <rect key="frame" x="8" y="345" width="359" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgFeed" destination="FcK-JZ-bTk" id="thO-C3-Vg1"/>
+                                    <outlet property="lblTitle" destination="Pmb-Uv-rdF" id="Gwm-UF-YBZ"/>
+                                    <outlet property="lblUsername" destination="atC-hY-WDv" id="Dau-60-9u0"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UO4-qe-76P" id="za2-nV-rQN"/>
+                            <outlet property="delegate" destination="UO4-qe-76P" id="vt5-KP-GYI"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8dP-H8-Jf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1453.5999999999999" y="-553.67316341829087"/>
+        </scene>
         <!--Users-->
         <scene sceneID="C7q-On-xdq">
             <objects>
@@ -134,11 +188,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Users" id="vgD-Qs-NSZ">
-                        <barButtonItem key="leftBarButtonItem" title="Post" id="4x9-7z-Uf7">
-                            <connections>
-                                <segue destination="GyM-xM-e6y" kind="show" id="l88-Gr-GaJ"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem title="Post" id="4x9-7z-Uf7">
+                                <connections>
+                                    <segue destination="GyM-xM-e6y" kind="show" id="l88-Gr-GaJ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Feed" id="mzt-pO-ze4">
+                                <connections>
+                                    <segue destination="UO4-qe-76P" kind="show" id="jT7-Uk-5cV"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="YMe-F2-lDL">
                             <connections>
                                 <action selector="btnLogOutPressed:" destination="Hto-ge-DYX" id="O4K-BH-9Kd"/>

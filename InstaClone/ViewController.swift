@@ -9,6 +9,18 @@
 import UIKit
 import Parse
 
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
 class ViewController: UIViewController {
     
     var signupMode = true
@@ -63,6 +75,12 @@ class ViewController: UIViewController {
                         self.createAlert(title: "Signup Error", message: displayErrorMessage)
                     } else {
                         print("User registered")
+                        
+                        let following = PFObject(className: "Followers")
+                        
+                        following["follower"] = PFUser.current()?.objectId
+                        following["following"] = PFUser.current()?.objectId
+                        following.saveInBackground()
                         
                         self.performSegue(withIdentifier: "showUserTable", sender: self)
                     }
@@ -129,6 +147,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.hideKeyboardWhenTappedAround() 
     }
 
     override func didReceiveMemoryWarning() {
